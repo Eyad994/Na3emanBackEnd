@@ -15,7 +15,7 @@ class ReserveController extends Controller
             ->join('reserves', 'reserves.provider_id', 'users.id')
             ->join('providers', 'users.place_id', 'providers.id')
             ->where('reserves.user_id', $id)
-            ->select('reserves.id','users.name', 'users.email', 'reserves.time', 'reserves.date', 'reserves.provider_id', 'providers.latitude', 'providers.longitude')
+            ->select('reserves.id','users.name', 'users.email', 'reserves.time', 'reserves.date', 'reserves.provider_id', 'providers.latitude', 'providers.longitude', 'reserves.approved')
             ->get();
 
         return $join;

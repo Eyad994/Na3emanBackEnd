@@ -12,4 +12,7 @@
 */
 Auth::routes();
 
+Route::get('/', function (){
+   return \App\Reserve::all();
+});
 Route::get('/home', 'HomeController@index')->name('home');
