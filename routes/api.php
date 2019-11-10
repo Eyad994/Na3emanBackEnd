@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Http\Request;
-
 Route::group([
     'prefix' => 'auth'
 ], function () {
@@ -25,3 +23,5 @@ Route::get('deleteReserve/{id}', 'ReserveController@deleteReserve');
 Route::get('getUsersReserves/{provider_id}', 'ReserveController@getAllUsersReserve');
 
 Route::post('reserve', 'ReserveController@reserve');
+
+Route::get('/send', 'HomeController@send');
