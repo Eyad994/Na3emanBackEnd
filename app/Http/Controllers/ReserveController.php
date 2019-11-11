@@ -75,7 +75,7 @@ class ReserveController extends Controller
         $users = DB::table('users')
             ->join('reserves', 'reserves.user_id', 'users.id')
             ->where('reserves.provider_id', $provider_id)
-            ->select('users.name', 'users.email', 'reserves.time', 'reserves.date')
+            ->select('reserves.id', 'users.name', 'users.email', 'reserves.time', 'reserves.date', 'reserves.approved')
             ->get();
         return $users;
     }
