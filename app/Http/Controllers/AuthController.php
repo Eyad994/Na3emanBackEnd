@@ -30,8 +30,9 @@ class AuthController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'password' => bcrypt($request->password),
-            'is_provider' => $request->is_provider,
+            'is_provider' => 0,
             'place_id' => $request->place_id,
+            'device_token' => $request->device_token
         ]);
         $user->save();
         return response()->json([

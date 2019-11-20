@@ -25,3 +25,7 @@ Route::get('getUsersReserves/{provider_id}', 'ReserveController@getAllUsersReser
 Route::post('reserve', 'ReserveController@reserve');
 
 Route::get('/send', 'HomeController@send');
+
+Route::get('sendAccept/{id}', 'HomeController@sendAcceptNotification');
+
+Route::get('sendDecline/{id}', 'HomeController@sendDeclineNotification');

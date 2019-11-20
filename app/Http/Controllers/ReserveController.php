@@ -10,7 +10,6 @@ class ReserveController extends Controller
 {
     public function getAllReserves($id)
     {
-
         $join = DB::table('users')
             ->join('reserves', 'reserves.provider_id', 'users.id')
             ->join('providers', 'users.place_id', 'providers.id')

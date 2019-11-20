@@ -13,3 +13,5 @@
 Auth::routes();
 
 Route::get('/send', 'HomeController@send');
+
+Route::get('/sendAccept/{id}', 'HomeController@sendAcceptNotification');

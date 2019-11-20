@@ -2,25 +2,27 @@
 
 namespace App\Http\Controllers;
 
+use App\Reserve;
+use App\User;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
 
-    public function send()
+    public function send($title="title", $message="message", $device_token="cben5JtJRMs:APA91bENi9tQLfSy0POBkVNc34C6G_YYfJt0YX9Nbh7yCL2FgQXAziDyIAboWJhfscRS8K-qgfhLtBinQafnpxF7pjz9WAA8OePneewFdbDGBbSzaAjsCEALKW2huodnM3r94W7KS5ZL")
     {
         //foreground
         $data = array([
-            'title' => 'eyad',
-            'message' => 'mmmmmm',
+            'title' => $title,
+            'message' => $message,
             'image' => 'null'
         ]);
 
         // background
         $fields = array(
-            'to' => 'fioYS7Zuclw:APA91bGxirbML65WBUAX8PufGqkwKfGmkMT58lYV_q6L9IDd8YtqVo1Oh_wkR-jKwt6gYRcqCDDA2OArvDzv2Qg_tTVDsFHhzPN-T_kg1WfFCY_v_YlhfMQB5FqtaIY3fh9nvgsMlOvS',
-            'notification' => ["body" => "Cool offers. Get them before expiring!",
-                "title" => "Flat 80% discount",
+            'to' => $device_token,
+            'notification' => ["body" => $message,
+                "title" => $title,
                 "icon" => "logo",
                 "sound" => "default"
             ],
@@ -87,28 +89,27 @@ class HomeController extends Controller
 
     }
 
-    public function sendAcceptNotification()
+    public function sendAcceptNotification($id)
     {
-        /**
-         * @param $providerId, $userId || $id of reservation table and then we can get the provider and user from the reservation row.
-         *
-         * $userToken = User::where('id', $userId)->pluck('device_token')[0];
-         * $providerName = User::where('id', $providerId)->pluck('name')[0];
-         * $notification = new Notification;
-         * $notification ->toSingleDevice($userToken, 'Congratulations!', $providerName . ' has accept your reserve', null, null);
-         */
+        $reserve = Reserve::where('id', 8)->first(['user_id', 'provider_id']);
+
+        $userDeviceToken = User::where('id', $reserve['user_id'])->first(['device_token']);
+        $provider = User::where('id', $reserve['provider_id'])->first(['name']);
+        $providerName = $provider['name'];
+
+        $this->send('Congratulations!', "$providerName has accept your reserve", $userDeviceToken['device_token']);
+
     }
 
-    public function sendDeclineNotification()
+    public function sendDeclineNotification($id)
     {
-        /**
-         * @param $providerId, $userId || $id of reservation and then we can get the provider and user from the reservation row.
-         *
-         * $userToken = User::where('id', $userId)->pluck('device_token')[0];
-         * $providerName = User::where('id', $providerId)->pluck('name')[0];
-         * $notification = new Notification;
-         * $notification ->toSingleDevice($userToken, 'We Apologize!', $providerName . ' has declined your reserve', null, null);
-         */
+        $reserve = Reserve::where('id', $id)->first(['user_id', 'provider_id']);
+
+        $userDeviceToken = User::where('id', $reserve['user_id'])->first(['device_token']);
+        $provider = User::where('id', $reserve['provider_id'])->first(['name']);
+        $providerName = $provider['name'];
+
+        $this->send('We Apologize!', "$providerName has rejected your reserve!", $userDeviceToken['device_token']);
     }
 
     public function messageToAllUsers()
