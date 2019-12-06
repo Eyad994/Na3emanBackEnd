@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Reserve;
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -57,16 +58,22 @@ class ReserveController extends Controller
 
         $date = strtotime($request->date." ".$request->time);
 
-        Reserve::create([
+        $reserve = Reserve::create([
            'time' => date("h.i A", $date),
            'date' => $request->date,
            'provider_id' => $request->provider_id,
            'user_id' => $request->user_id
         ]);
 
+        $userName = User::where('id', $reserve['user_id'])->first(['name', 'device_token']);
+        $deviceToken = User::where('id', $reserve['provider_id'])->first('device_token')[0];
+        $notification = new HomeController();
+        $notification->send('New Reserve!', "You have new reserve from ".$userName['name'], $deviceToken);
+
         return response()->json([
             'message' => 'Successfully made reserve!'
         ], 201);
+
     }
 
     public function getAllUsersReserve($provider_id){

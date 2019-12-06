@@ -9,8 +9,9 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
 
-    public function send($title="title", $message="message", $device_token="cben5JtJRMs:APA91bENi9tQLfSy0POBkVNc34C6G_YYfJt0YX9Nbh7yCL2FgQXAziDyIAboWJhfscRS8K-qgfhLtBinQafnpxF7pjz9WAA8OePneewFdbDGBbSzaAjsCEALKW2huodnM3r94W7KS5ZL")
+    public function send($title="title", $message="message", $device_token="cpSR5gy5gN8:APA91bEy-z2OVVoaeLXTVTKvsOu-erHHu4bU4xEfKQzUf4toAVP96PazHzSMCykzdoeeTDHxjuxwRp2saV1DnAMNrFhuBCK_zE1W0y8wq03Tu34gQiiRLSFToYOvL4u7fqIUv2vuu4Vl")
     {
+
         //foreground
         $data = array([
             'title' => $title,
