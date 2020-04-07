@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="778c3c04-7883-4d9e-8980-d372040645a4" name="Default Changelist" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/softnweb/laravel-coming-soon/src/views/comingsoon.blade.php" afterPath="$PROJECT_DIR$/vendor/softnweb/laravel-coming-soon/src/views/comingsoon.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,8 +43,8 @@
       <file leaf-file-name="comingsoon.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vendor/softnweb/laravel-coming-soon/src/views/comingsoon.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="42" column="21" lean-forward="true" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+            <state relative-caret-position="340">
+              <caret line="20" column="55" lean-forward="false" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -118,7 +119,6 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_09_25_072832_add_columns_to_reserves.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_09_25_085731_rename_provider_id_in_users_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_09_25_090016_rename_provider_id_in_users_table.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ProviderController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_11_08_092431_add_approved_column_to_table_reserves.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_11_08_093341_add_approved_column_to_reserves.php" />
@@ -135,6 +135,7 @@
         <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
         <option value="$PROJECT_DIR$/public/css/comingsoon.css" />
         <option value="$PROJECT_DIR$/config/comingsoon.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/vendor/softnweb/laravel-coming-soon/src/views/comingsoon.blade.php" />
       </list>
     </option>
@@ -252,8 +253,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="230" />
-    <option name="y" value="42" />
+    <option name="x" value="334" />
+    <option name="y" value="49" />
     <option name="width" value="1570" />
     <option name="height" value="991" />
   </component>
@@ -284,98 +285,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mobileBackend-dev" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobileBackend-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobileBackend-dev" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobileBackend-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobileBackend-dev" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="softnweb" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel-coming-soon" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobileBackend-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobileBackend-dev" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="softnweb" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel-coming-soon" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobileBackend-dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobileBackend-dev" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="softnweb" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="laravel-coming-soon" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -660,18 +569,17 @@
       <workItem from="1574365429744" duration="3142000" />
       <workItem from="1574372918080" duration="2100000" />
       <workItem from="1575594361876" duration="328000" />
-      <workItem from="1586289080873" duration="2886000" />
+      <workItem from="1586289080873" duration="3639000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59004000" />
+    <option name="totallyTimeSpent" value="59757000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="230" y="42" width="1570" height="991" extended-state="0" />
-    <editor active="true" />
+    <frame x="334" y="49" width="1570" height="991" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21456954" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21456954" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -908,13 +816,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_09_25_090016_rename_provider_id_in_users_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1082,10 +983,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/softnweb/laravel-coming-soon/src/views/comingsoon.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="42" column="21" lean-forward="true" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+        <state relative-caret-position="340">
+          <caret line="20" column="55" lean-forward="false" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
           <folding />
         </state>
       </provider>

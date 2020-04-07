@@ -18,7 +18,7 @@
     <div id="particles-js"></div>
         <div class="flex-center position-ref full-height">
             <div class="content">
-                <img src="{{ asset('mshakal.png') }}" width="200px" alt="">
+                <img src="{{ asset('mshakal_s.png') }}" width="350px" alt="">
                 <div class="title m-b-md " >
                     Coming Soon
                 </div>
