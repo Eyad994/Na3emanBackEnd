@@ -1,0 +1,36 @@
+{
+    "name": "softnweb/laravel-coming-soon",
+    "description": "Simple Comming Soon page",
+    "keywords": ["coming-soon"],
+    "type": "library",
+    "license": "MIT",
+    "scripts": {
+        "post-install-cmd": [
+            "php artisan vendor:publish"
+        ],
+        "post-update-cmd": [
+            "php -r \"copy('src/config/comingsoon.php', 'config/comingsoon.php');\"",
+            "php artisan vendor:publish"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Soft 'n' Web",
+            "email": "info@softnweb.in"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Softnweb\\ComingSoon\\ComingSoonServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": { 
+            "Softnweb\\ComingSoon\\": "src/"
+        }
+    }
+}
